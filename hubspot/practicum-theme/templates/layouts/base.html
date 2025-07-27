@@ -2,7 +2,7 @@
     templateType: none
 -->
 <!doctype html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>{{ content.html_title }}</title>
@@ -13,6 +13,9 @@
   </head>
 
   <body>
+    <a href="#main" class="skip-link">
+        Skip to content
+    </a>
     {% block header %}
       {% global_partial path="../partials/header.html" %}
     {% endblock header %}

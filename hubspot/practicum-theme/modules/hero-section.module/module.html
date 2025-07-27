@@ -1,6 +1,6 @@
 <div class="hero-container">
 	<div class="two-col-feature">
-		<div class="order-text text-center">
+		<div tabindex="0" class="order-text text-center">
 			{% inline_rich_text field="description_column" value="{{ module.description_column }}" %}
 		</div>
 
@@ -13,7 +13,7 @@
           {% set sizeAttrs = 'width="{{ module.image_column.max_width|escape_attr }}" height="{{ module.image_column.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
         {% endif %}
          {% set loadingAttr = module.image_column.loading != 'disabled' ? 'loading="{{ module.image_column.loading|escape_attr }}"' : '' %}
-        <img src="{{ module.image_column.src|escape_url }}" alt="{{ module.image_column.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+        <img tabindex="0" src="{{ module.image_column.src|escape_url }}" alt="{{ module.image_column.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
       {% endif %}
 		</div>
 	</div>

@@ -1,4 +1,103 @@
 [ {
+  "id" : "18946145-5e63-ca66-c79f-7ef37542f6e6",
+  "name" : "item_style",
+  "label" : "Team List item",
+  "required" : false,
+  "locked" : false,
+  "children" : [ {
+    "id" : "d367cfef-5053-fad0-8e52-096dff5acfcb",
+    "name" : "item_border",
+    "label" : "Item Border",
+    "required" : false,
+    "locked" : false,
+    "allow_custom_border_sides" : false,
+    "display_width" : null,
+    "type" : "border",
+    "default" : {
+      "top" : {
+        "style" : "solid",
+        "color" : "#000000",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "bottom" : {
+        "style" : "solid",
+        "color" : "#000000",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "left" : {
+        "style" : "solid",
+        "color" : "#000000",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "right" : {
+        "style" : "solid",
+        "color" : "#000000",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      }
+    }
+  } ],
+  "tab" : "STYLE",
+  "expanded" : false,
+  "group_occurrence_meta" : null,
+  "display_width" : null,
+  "type" : "group",
+  "default" : {
+    "item_border" : {
+      "top" : {
+        "style" : "solid",
+        "color" : "#000000",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "bottom" : {
+        "style" : "solid",
+        "color" : "#000000",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "left" : {
+        "style" : "solid",
+        "color" : "#000000",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      },
+      "right" : {
+        "style" : "solid",
+        "color" : "#000000",
+        "opacity" : 100,
+        "width" : {
+          "value" : 1,
+          "units" : "px"
+        }
+      }
+    }
+  }
+}, {
   "id" : "c27f3899-4686-597b-b18b-d57999d337ca",
   "name" : "team_items",
   "label" : "Team Items",

@@ -3,7 +3,16 @@
 		{% for item in module.team_items %}
 			<div class="column-content">
 				{% if item.cat_image.src %}
-					<img class="team-image" srcset="{{ resize_image_url(item.cat_image.src, 300, 300) }}" alt="{{ item.cat_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% if item.cat_image.src %}
+            {% set sizeAttrs = 'width="{{ item.cat_image.width|escape_attr }}" height="{{ item.cat_image.height|escape_attr }}"' %}
+            {% if item.cat_image.size_type == 'auto' %}
+              {% set sizeAttrs = 'width="{{ item.cat_image.width|escape_attr }}" height="{{ item.cat_image.height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+            {% elif item.cat_image.size_type == 'auto_custom_max' %}
+              {% set sizeAttrs = 'width="{{ item.cat_image.max_width|escape_attr }}" height="{{ item.cat_image.max_height|escape_attr }}" style="max-width: 100%; height: auto;"' %}
+            {% endif %}
+             {% set loadingAttr = item.cat_image.loading != 'disabled' ? 'loading="{{ item.cat_image.loading|escape_attr }}"' : '' %}
+            <img src="{{ item.cat_image.src|escape_url }}" alt="{{ item.cat_image.alt|escape_attr }}" {{ loadingAttr }} {{ sizeAttrs }}>
+          {% endif %}
 				{% endif %}
 
 				<div>
@@ -16,3 +25,15 @@
 		{% endfor %}
 	</div>
 </div>
+
+{% require_css %}
+  <style>
+    .team-container {
+      padding: 50px 0;
+    }
+    .column-content {
+      border-radius: 20px;
+      {{ module.item_style.item_border.css }};
+    }
+  </style>
+{% end_require_css %}

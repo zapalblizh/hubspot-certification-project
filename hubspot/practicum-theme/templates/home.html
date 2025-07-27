@@ -1,0 +1,58 @@
+<!--
+    templateType: page
+    label: Page template
+    isAvailableForNewContent: true
+-->
+
+{% extends "./layouts/base.html" %}
+
+{% block body %}
+    {% dnd_area "dnd_area"
+        label="Main Content",
+        class="body-container body-container--home"
+    %}
+
+        {# Drag and Drop Area for Text and Image #}
+        {% dnd_section
+            vertical_alignment="MIDDLE",
+            max_width=1280,
+            margin={
+                "top": 0,
+                "bottom": 0,
+                "left": 50,
+                "right": 50
+            }
+        %}
+            {% dnd_module "image"
+                path="@hubspot/image",
+                vertical_alignment="MIDDLE",
+                img={
+                    'alt': "The Great Whiskerwind Portrait",
+                    'loading': "disabled",
+                    'max_height': 600,
+                    "max_width": 450,
+                    "size_type": "auto_custom_max",
+                    "src": "https://146490261.fs1.hubspotusercontent-eu1.net/hubfs/146490261/magician-cat.jpg"
+                },
+                width=6,
+                offset=0
+            %}
+            {% end_dnd_module %}
+
+            {% dnd_module "rich_text"
+                path="@hubspot/rich_text",
+                label="Hero Rich Text",
+                vertical_alignment="MIDDLE",
+                html="<h2>Whiskerwind</h2><p>Born beneath the crescent moon in the enchanted Glimmerwood, Whiskerwind was no ordinary kitten. His mother, a forest tabby with eyes like polished amber, claimed he had been marked at birth by the Starlight Spirits, evidenced by the tiny rune glowing faintly in the pad of his left paw.</p>",
+                offset=6,
+                width=6
+            %}
+            {% end_dnd_module %}
+
+        {% end_dnd_section %}
+
+        {# Three Cols Team List #}
+        {% include_dnd_partial path="../sections/three-cols-grid.html" %}
+
+    {% end_dnd_area %}
+{% endblock body %}

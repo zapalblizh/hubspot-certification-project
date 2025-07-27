@@ -1,0 +1,49 @@
+<!--
+    templateType: global_partial
+    label: Main Header
+-->
+<style>
+    header {
+        max-width: 1280px;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0;
+        margin: 0 auto;
+        background-color: {{ theme.global_background_color.primary.color }};
+        font-family: {{ theme.global_fonts.primary.font }};
+    }
+
+    .header_container {
+        width: 100%;
+        margin: 0 20px;
+    }
+
+    .content_container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        align-content: center;
+    }
+
+    @media (max-width: 900px) {
+        .content_container {
+            flex-direction: column;
+        }
+        .content_container p {
+            text-align: center;
+        }
+    }
+</style>
+
+<header>
+    <div class="header_container">
+        {% module_block module "header-content" path="@hubspot/rich_text" label="Header Content" %}
+            {% module_attribute "html" %}
+                <div class="content_container">
+                    <h1>Beautiful Skies</h1>
+                    <p>Skies are beautiful, just like flowers. Edit this quote like the god that you are.</p>
+                </div>
+            {% end_module_attribute %}
+        {% end_module_block %}
+    </div>
+</header>

@@ -1,0 +1,8 @@
+{
+  "global" : false,
+  "content_types" : [ "KNOWLEDGE_BASE", "MEMBERSHIP", "QUOTE_TEMPLATE", "CASE_STUDY", "LANDING_PAGE", "SITE_PAGE", "CUSTOMER_PORTAL", "BLOG_LISTING", "WEB_INTERACTIVE", "BLOG_POST" ],
+  "host_template_types" : [ "PAGE", "BLOG_LISTING", "BLOG_POST" ],
+  "module_id" : 251018952952,
+  "label" : "Team List",
+  "is_available_for_new_content" : true
+}

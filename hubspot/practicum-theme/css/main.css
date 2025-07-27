@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    text-transform: none;
+｝
+
+{% include './layout.css' %}
+
+body {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #1E1E1E;
+    margin: 0;
+}
+
+main {
+    margin: 50px 0;
+}
+
+.body-container img {
+    max-width: 100%;
+    height: auto;
+    align-content: center;
+}
+
+.body-container .hs_cos_wrapper_type_linked_image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hs_cos_wrapper {
+    margin: 20px;
+}

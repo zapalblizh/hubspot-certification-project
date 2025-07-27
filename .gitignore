@@ -1,0 +1,27 @@
+# Apple macOS
+.DS_Store
+.DS_Store?
+*/.DS_Store
+
+# Node files
+node_modules
+.sass-cache
+
+# IntelliJ IDEA
+.idea
+
+# Work directories
+build/*
+wp-data/*
+temp/*
+release/*
+release_zip/*
+svn/*
+hubspot.config.yml__
+package-lock.json
+
+# HubSpot config file
+hubspot.config.yml__
+
+# HubSpot config file
+hubspot.config.yml

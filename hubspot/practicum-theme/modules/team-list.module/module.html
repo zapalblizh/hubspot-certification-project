@@ -1,0 +1,18 @@
+<div class="team-container">
+	<div class="column">
+		{% for item in module.team_items %}
+			<div class="column-content">
+				{% if item.cat_image.src %}
+					<img class="team-image" srcset="{{ resize_image_url(item.cat_image.src, 300, 300) }}" alt="{{ item.cat_image.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+				{% endif %}
+
+				<div>
+					<div class="title-style">
+						{% inline_text field="title" value="{{ item.title }}" %}
+					</div>
+					{% inline_text field="description" value="{{ item.description }}" %}
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+</div>

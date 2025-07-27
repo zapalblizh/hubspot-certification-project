@@ -1,0 +1,33 @@
+{% set total_columns_count = 12 %}
+
+/* Mobile layout */
+.row-fluid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+{% for span_num in range(1, total_columns_count + 1) %}
+    {{ ".row-fluid .span" ~ span_num }}{{ loop.last ? null : "," }}
+{%- endfor -%} {
+    min-height: 1px;
+}
+
+/* Desktop layout */
+
+@media (min-width: 768px) {
+    .row-fluid {
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+    }
+
+    {% for span_num in range(1, total_columns_count) %}
+        {{ ".row-fluid .span" ~ span_num }} {
+            width: calc(8.333 * 1% * {{ span_num }} - 2.13% * ({{ total_columns_count - span_num }} * 8.333 / 100));
+        }
+    {% endfor %}
+}

@@ -17,8 +17,8 @@
     "required" : false,
     "locked" : false,
     "allow_new_line" : false,
-    "type" : "text",
     "display_width" : null,
+    "type" : "text",
     "default" : "New Cat"
   }, {
     "id" : "ce81089c-ff5a-7084-e3ea-305c073f3119",
@@ -27,8 +27,8 @@
     "required" : false,
     "locked" : false,
     "allow_new_line" : false,
-    "type" : "text",
     "display_width" : null,
+    "type" : "text",
     "default" : "Cat Description"
   }, {
     "id" : "fb0dba4d-5e05-a8b3-5e85-8e0bf7c19c0c",
@@ -39,8 +39,8 @@
     "responsive" : true,
     "resizable" : true,
     "show_loading" : false,
-    "type" : "image",
     "display_width" : null,
+    "type" : "image",
     "default" : {
       "size_type" : "auto",
       "src" : "https://146490261.fs1.hubspotusercontent-eu1.net/hubfs/146490261/wizardy.webp",
@@ -55,8 +55,8 @@
   "tab" : "CONTENT",
   "expanded" : false,
   "group_occurrence_meta" : null,
-  "type" : "group",
   "display_width" : null,
+  "type" : "group",
   "default" : [ {
     "title" : "New Cat",
     "description" : "Cat Description",

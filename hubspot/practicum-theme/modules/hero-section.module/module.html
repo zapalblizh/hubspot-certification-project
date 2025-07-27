@@ -1,0 +1,13 @@
+<div class="hero-container">
+	<div class="two-col-feature">
+		<div class="order-text text-center">
+			{% inline_rich_text field="description_column" value="{{ module.description_column }}" %}
+		</div>
+
+		<div class="align-image order-image">
+			{% if module.image_column.src %}
+				<img class="style-image" srcset="{{ resize_image_url(module.image_column.src, 450, 600) }}" alt="{{ module.image_column.alt }}" {{ loadingAttr }} {{ sizeAttrs }}>
+			{% endif %}
+		</div>
+	</div>
+</div>

@@ -1,0 +1,31 @@
+[ {
+  "id" : "1eafa978-e4a9-77b5-9bae-0e92c8c116c2",
+  "name" : "image_column",
+  "label" : "Image Column",
+  "required" : true,
+  "locked" : false,
+  "responsive" : true,
+  "resizable" : true,
+  "show_loading" : false,
+  "type" : "image",
+  "display_width" : null,
+  "default" : {
+    "size_type" : "auto",
+    "src" : "https://146490261.fs1.hubspotusercontent-eu1.net/hubfs/146490261/magician-cat.jpg",
+    "alt" : "magician-cat",
+    "loading" : "lazy",
+    "width" : 683,
+    "height" : 1024,
+    "max_width" : 683,
+    "max_height" : 1024
+  }
+}, {
+  "id" : "31bd2944-ff6c-2034-2815-af16b84e4b88",
+  "name" : "description_column",
+  "label" : "Description Column",
+  "required" : true,
+  "locked" : false,
+  "type" : "richtext",
+  "display_width" : null,
+  "default" : "<h2><span style=\"font-family: Arial, Helvetica, sans-serif;\"><strong>Whiskerwind</strong></span></h2>\n<p><span style=\"font-family: Arial, Helvetica, sans-serif;\">Born beneath the crescent moon in the enchanted Glimmerwood, Whiskerwind was no ordinary kitten. His mother, a forest tabby with eyes like polished amber, claimed he had been marked at birth by the Starlight Spirits, evidenced by the tiny rune glowing faintly in the pad of his left paw.</span></p>"
+} ]
